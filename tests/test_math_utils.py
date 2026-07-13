@@ -1,9 +1,9 @@
-import sys
 from pathlib import Path
+import sys
 
-sys.path.append(str(Path(__file__).resolve().parents[1] / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from math_utils import add
+from math_utils import add  # noqa: E402
 
 
 def test_add():
